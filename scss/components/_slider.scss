@@ -1,0 +1,127 @@
+// scss/components/_slider.scss
+@use '../base/variables' as v;
+
+.product-slider {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%; 
+  background-color: #f8f9fc; 
+
+  .slider-container {
+    position: relative;
+    width: 530px;
+    height: 468px;
+    background-image: url('../image/ball-color-court-1405355_2025-01-08/ball-color-court-1405355@3x.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .slider-content {
+      position: absolute;
+      top: 38px;
+      left: 200px;
+      text-align: left;
+      color: v.$white;
+      width: 70%;
+
+      .slider-heading {
+        width: 259px;
+        height: 151px;
+
+        h2 {
+          font-family: v.$font-primary;
+          font-size: 50px;
+          line-height: 1.2;
+          color: v.$white;
+          font-weight: normal;
+
+          .highlight {
+            color: v.$white;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .slider-description {
+        width: 303px;
+        height: 100px;
+        font-family: v.$font-primary;
+        font-size: 18px;
+        line-height: 1.5;
+        color: v.$white;
+      }
+
+      .slider-dots {
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        margin-top: 14px;
+
+        .dot {
+          width: 8px;
+          height: 7.8px;
+          border-radius: 50%;
+          background-color: v.$white;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &.active {
+            background-color: v.$lime-green;
+          }
+
+          &:hover {
+            background-color: v.$lime-green;
+          }
+        }
+      }
+
+      .slider-controls {
+        display: flex;
+        gap: 19px;
+        margin-top: 30px;
+
+        .control {
+          width: 54px;
+          height: 54px;
+          border: solid 1px v.$white;
+          border-radius: 50%;
+          background-color: transparent;
+          color: v.$white;
+          font-size: 24px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          padding: 21px 21px 20px 24px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          box-shadow: none;
+
+          &:hover {
+            background-color: v.$lime-green;
+            transform: scale(1.1);
+          }
+
+          &.active {
+            background-color: v.$lime-green;
+          }
+        }
+      }
+    }
+  }
+
+  .slider-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    .product-card {
+      flex: 0 0 250px; 
+      text-align: center;
+      transition: transform 0.5s ease;
+    }
+  }
+}

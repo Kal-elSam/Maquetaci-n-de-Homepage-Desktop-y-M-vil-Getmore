@@ -1,0 +1,62 @@
+// scss/layout/_header.scss
+@use '../base/variables' as v;
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+.Line {
+  position: absolute;
+  top: 0;
+  left: 105px;
+  width: 1px;
+  height: 811px;
+  border: solid 2px v.$white;
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+  a {
+    font-family: v.$font-primary;
+    font-size: 16px;
+    color: v.$white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: v.$primary-color;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: v.$white;
+    transition: all 0.3s ease;
+  }
+}

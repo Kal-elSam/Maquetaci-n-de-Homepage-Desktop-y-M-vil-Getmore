@@ -1,0 +1,99 @@
+// scss/components/_hero.scss
+@use '../base/variables' as v;
+@use '../base/mixins' as mix;
+
+.hero {
+  height: 785px;
+  background: v.$clay-orange url('../image/fondo1/group@3x.jpg') no-repeat center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .hero-content {
+    max-width: 709px;
+    margin-left: 173px;
+    position: relative;
+    z-index: 2;
+    color: v.$white;
+    text-align: left;
+    @media screen and (max-width: v.$bp-mobile) {
+      margin-left: 50px;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      color: v.$white;
+      font-family: v.$font-primary;
+      font-size: 53px;
+      line-height: 68px;
+      letter-spacing: -0.05px;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      position: relative;
+
+      @media screen and (max-width: v.$bp-mobile) {
+        font-size: 32px;
+        line-height: 42px;
+        
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: v.$highlight-green;
+        position: relative;
+      }
+    }
+
+    .cta-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 269px;
+      height: 53px;
+      padding: 0;
+      border: 1px solid v.$white;
+      border-radius: 26.5px;
+      background: transparent;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: v.$white;
+
+      @media screen and (max-width: v.$bp-mobile) {
+        width: 200px;
+        font-size: small;
+      }
+
+    
+
+      &:hover {
+        background-color: v.$white;
+        color: v.$clay-orange;
+
+        span {
+          color: v.$clay-orange;
+        }
+      }
+    }
+  }
+}
+
+.image-section {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: auto; /* Ajusta la altura dinámicamente */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Asegura que se centre verticalmente si hay espacio extra */
+  overflow: hidden; /* Evita desbordamientos no deseados */
+}
+
+.section-image {
+  width: 100%; /* Escala la imagen para que ocupe todo el ancho */
+  height: auto; /* Mantiene la proporción */
+  object-fit: contain; /* Muestra la imagen completa sin recortar */
+}

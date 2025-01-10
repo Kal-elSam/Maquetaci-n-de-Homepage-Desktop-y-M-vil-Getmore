@@ -1,0 +1,21 @@
+// scss/main.scss
+
+/* 1) BASE */
+@use 'base/variables' as v;
+@use 'base/mixins' as mix;
+@use 'base/reset';
+@use 'base/global';
+
+/* 2) LAYOUT */
+@use 'layout/header';
+@use 'layout/nav';
+@use 'layout/footer';
+
+/* 3) COMPONENTS */
+@use 'components/hero';
+@use 'components/product-highlight';
+@use 'components/slider';
+@use 'components/product-cards';
+
+/* 4) RESPONSIVE */
+@use 'responsive';

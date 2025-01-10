@@ -1,0 +1,14 @@
+// scss/base/_global.scss
+@use './variables' as v;
+
+body {
+  font-family: v.$font-primary;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: v.$clay-orange;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

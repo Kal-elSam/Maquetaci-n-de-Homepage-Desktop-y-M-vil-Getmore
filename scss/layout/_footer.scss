@@ -1,0 +1,68 @@
+// scss/layout/_footer.scss
+@use '../base/variables' as v;
+
+.footer {
+  background-color: v.$lime-green;
+  height: 203px;
+  padding: 64px 78px 58px 78px;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      gap: 45px;
+      
+
+      li a {
+        text-decoration: none;
+        font-family: v.$font-primary;
+        font-size: 13px;
+        color: v.$black;
+        font-weight: normal;
+      }
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 15px;
+
+      .social-icon {
+        width: 31px;
+        height: 31px;
+      }
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .logo-footer {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 35px;
+      height: 35px;
+      
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// scss/components/_product-cards.scss
+@use '../base/variables' as v;
+
+.product-cards {
+  display: flex;
+  gap: 36px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 51px 36px 73px 52px;
+
+
+  .product-card {
+    position: relative;
+    background-color: v.$white;
+    width: 188px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+
+    img {
+      width: 218px;
+      height: 218px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .product-number {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      background-color: v.$lime-green;
+      color: v.$white;
+      font-size: 17px;
+      font-weight: bold;
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

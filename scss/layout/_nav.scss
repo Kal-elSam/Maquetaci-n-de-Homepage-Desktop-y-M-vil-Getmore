@@ -1,0 +1,116 @@
+// scss/layout/_nav.scss
+@use '../base/variables' as v;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  z-index: 10;
+
+  img.Fill-2 {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: v.$white;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 44px;
+  position: absolute;
+  top: 44px;
+  left: 173px;
+  align-items: center;
+
+  a {
+    font-family: v.$font-primary;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 37px;
+    color: v.$white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.active {
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      opacity: 1;
+
+      &::after {
+        content: "";
+        width: 17px;
+        height: 2px;
+        background-color: v.$white;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        border: solid 2px v.$white;
+      }
+    }
+
+    &:hover::after {
+      content: "";
+      width: 17px;
+      height: 2px;
+      background-color: v.$white;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      border: solid 2px v.$white;
+    }
+  }
+}
+
+.language-selector {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 45px;
+  right: 94px;
+  align-items: center;
+
+  a {
+    font-family: v.$font-primary;
+    font-size: 13px;
+    letter-spacing: 1.14px;
+    color: v.$white;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 0.3s ease, font-weight 0.3s ease;
+
+    &.active {
+      font-weight: bold;
+      opacity: 1;
+    }
+  }
+}
