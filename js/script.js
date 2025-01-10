@@ -87,3 +87,17 @@ document.addEventListener("DOMContentLoaded", () => {
   startAutoSlide();
   updateSlider();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('nav');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      // Si se ha hecho scroll más de 80px
+      nav.classList.add('scrolled');
+    } else {
+      // Si estamos en la parte superior
+      nav.classList.remove('scrolled');
+    }
+  });
+});

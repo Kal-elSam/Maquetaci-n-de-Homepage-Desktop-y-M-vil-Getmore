@@ -91,7 +91,17 @@ nav {
   height: 80px;
   margin: 0 auto;
   padding: 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+nav.scrolled {
+  background-color: #C74E1B;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -683,12 +693,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     padding: 0 1.5rem;
-    width: calc(100% - 3rem);
-    margin: 0 auto;
-    box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  .nav.scrolled {
+    background-color: #C74E1B;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .logo {
     display: flex;
@@ -940,12 +957,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     padding: 0 1.5rem;
-    width: calc(100% - 3rem);
-    margin: 0 auto;
-    box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  .nav.scrolled {
+    background-color: #C74E1B;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .logo {
     display: flex;
@@ -1202,12 +1226,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     padding: 0 1.5rem;
-    width: calc(100% - 3rem);
-    margin: 0 auto;
-    box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  .nav.scrolled {
+    background-color: #C74E1B;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .logo {
     display: flex;

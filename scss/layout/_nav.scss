@@ -8,8 +8,22 @@ nav {
   height: 80px;
   margin: 0 auto;
   padding: 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; // Fondo transparente por defecto
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &.scrolled {
+    background-color: v.$clay-orange; // Fondo visible después del scroll
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra para separar del contenido
+  }
 }
+
+
+
 
 .logo {
   position: absolute;
