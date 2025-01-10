@@ -14,7 +14,7 @@ Este repositorio contiene la solución para la evaluación técnica **Front-End 
 ## 🔗 **Proyecto en Producción**
 
 El proyecto está desplegado en Vercel y disponible en el siguiente enlace:
-- [Homepage Getmore](https://maquetaci-n-de-homepage-desktop-y-m-vil-getmore.vercel.app/)
+- [Homepage Tienda](https://maquetaci-n-de-homepage-desktop-y-m-vil-getmore.vercel.app/)
 
 ## 🔗 **Objetivos del Proyecto**
 
@@ -95,7 +95,7 @@ El proyecto está desplegado en Vercel y disponible en el siguiente enlace:
 ## 📞 **Contacto**
 
 - [Repositorio GitHub](https://github.com/Kal-elSam/Maquetaci-n-de-Homepage-Desktop-y-M-vil-Getmore)
-- [Homepage Getmore](https://maquetaci-n-de-homepage-desktop-y-m-vil-getmore.vercel.app/)
+- [Homepage Tienda](https://maquetaci-n-de-homepage-desktop-y-m-vil-getmore.vercel.app/)
 
 ## 🗳️ **Licencia**
 
