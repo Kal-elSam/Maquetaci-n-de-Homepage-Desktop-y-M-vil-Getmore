@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "sass": "sass --watch scss/main.scss assets/css/style.css"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "npm run sass && vite build",
+  "preview": "vite preview",
+  "sass": "sass scss/main.scss assets/css/style.css"
+},
+
   "devDependencies": {
     "sass": "^1.83.1",
     "vite": "^5.4.2"
